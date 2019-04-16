@@ -1,0 +1,14 @@
+# Package manager
+node_modules/
+yarn-error.log
+yarn.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Documentation
+docs/
+
+#database
+test.sqlite

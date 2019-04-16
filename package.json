@@ -1,0 +1,45 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend Wazzup",
+  "scripts": {
+    "start": "NODE_ENV=production babel-node src/index.js",
+    "dev": "NODE_ENV=development IS_DEV=true nodemon --exec babel-node --inspect src/index.js",
+    "test": "NODE_ENV=test mocha --require babel-core/register --exit test",
+    "coverage": "NODE_ENV=test nyc --reporter=text --reporter=html --check-coverage --lines 80 mocha --require babel-core/register --exit test",
+    "lint": "eslint ./src",
+    "doc": "apidoc -i src/ -o docs/"
+  },
+  "author": "Wazzup",
+  "private": true,
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "eslint-plugin-promise": "^4.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mustache": "^2.3.0",
+    "pg": "^7.4.2",
+    "pg-hstore": "^2.3.2",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.7",
+    "sequelize": "^4.37.6",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.6",
+    "url-metadata": "^2.4.0",
+    "validate.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.1.2",
+    "chai-arrays": "^2.0.0",
+    "chai-http": "^4.0.0",
+    "eslint": "^5.13.0",
+    "mocha": "^5.2.0",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3",
+    "nyc": "^13.3.0"
+  }
+}
