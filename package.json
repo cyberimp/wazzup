@@ -24,7 +24,7 @@
     "pg-hstore": "^2.3.2",
     "request": "^2.85.0",
     "request-promise-native": "^1.0.7",
-    "sequelize": "^4.37.6",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^4.0.0",
     "sqlite3": "^4.0.6",
     "url-metadata": "^2.4.0",
